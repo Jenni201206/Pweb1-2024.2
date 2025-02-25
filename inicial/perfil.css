@@ -1,0 +1,398 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    background-image: url(assets/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat:repeat-Y;
+    padding-top: 80px;
+    margin: 0;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: #9260AF;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position:fixed;
+    z-index: 1000; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding: 5px 0;
+}
+
+.logo {
+    font-family: 'Kenia'; 
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 92.07px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.icone-coracao:hover {
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px #9260AF;
+}
+
+.icone-coracao:hover .mensagem-coracao {
+    display: block;  /* Mostra a mensagem */
+  }
+
+.mensagem-coracao {
+    display: none;
+    position: absolute;
+    top: 35px;  /* Ajusta a posição abaixo do ícone */
+    left: 0;
+    right: 5px;
+    background-color: #9260AF;
+    padding-right: 0;
+    padding-top: 1px;
+    padding-bottom: 0;
+    padding-left: 0;
+    color: white;
+    font-size: 14px;
+}
+
+  .icone-criar:hover {
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px #9260AF;
+}
+
+.icone-criar:hover .mensagem-criar {
+    display: block;  /* Mostra a mensagem */
+  }
+
+.mensagem-criar {
+    display: none;
+    position: absolute;
+    top: 35px;  /* Ajusta a posição abaixo do ícone */
+    left: 0;
+    background-color: #9260AF;
+    padding: 2px 2px;
+    color: white;
+    font-size: 14px;
+}
+
+.icone-relogio:hover {
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px #9260AF;
+}
+
+.icone-relogio:hover .mensagem-relogio {
+    display: block;  /* Mostra a mensagem */
+  }
+
+.mensagem-relogio {
+    display: none;
+    position: absolute;
+    top: 35px;  /* Ajusta a posição abaixo do ícone */
+    left: 0;
+    right: 5px;
+    background-color: #9260AF;
+    padding: 2px 2px;
+    color: white;
+    font-size: 14px;
+}
+
+.icone-chat:hover {
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px #9260AF;
+}
+
+.icone-chat:hover .mensagem-chat {
+    display: block;  /* Mostra a mensagem */
+}
+
+.mensagem-chat {
+    display: none;
+    position: absolute;
+    top: 35px;  /* Ajusta a posição abaixo do ícone */
+    left: 0;
+    background-color: #9260AF;
+    padding: 2px 2px;
+    color: white;
+    font-size: 14px;
+}
+
+.icone-perfil:hover {
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px #9260AF;
+}
+
+.icone-perfil:hover .mensagem-perfil {
+    display: block;  /* Mostra a mensagem */
+}
+
+.mensagem-perfil {
+    display: none;
+    position: absolute;
+    top: 35px;  /* Ajusta a posição abaixo do ícone */
+    left: 0;
+    background-color: #9260AF;
+    padding: 2px 2px;
+    color: white;
+    font-size: 14px;
+}
+
+.icones {
+    display: flex;
+    gap: 40px;
+}
+
+.linha-branca {
+    width: 90%;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+}
+
+.linha-preta {
+    width: 100%;
+    height: 1px;
+    background-color: rgb(0, 0, 0);
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-family: 'inter';
+}
+
+input {
+    padding: 5px;
+    width: 500px;
+    border-radius: 150px;
+}
+
+section {
+    padding: 100px;
+    align-items: center;
+}
+
+.livros-em-alta {
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.autores {
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+h2 {
+    margin-bottom: 42px;
+    font-family: 'inter'; 
+}
+
+.carrossel {
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+    overflow-x:scroll;
+    scroll-behavior: smooth;
+    transition: transform 0.1s ease-in-out;
+}
+
+.carrossel::-webkit-scrollbar {
+    display: none;
+}
+.livros, .autores-lista {
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    gap: 52px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.livro, .autor {
+    flex: 0 0 auto;
+    width: 135px;
+    text-align: center;
+}
+
+.autor-livro, .titulo-livro {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-top: 6px;
+    margin-bottom: 2px;
+}
+
+.livro img{
+    width: 100%;
+    height: 215px;
+    box-shadow: 7px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 9px;
+}
+
+.autor img {
+    width: 100%;
+    box-shadow: 7px 4px 10px rgba(0, 0, 0, 0.1);
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-bottom: 9px;
+}
+
+.next, .prev {
+    background-color: #ffffff;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+.next:hover, .prev:hover {
+    background-color: #e5e0e8;
+
+}
+
+.container {
+    background-color: white;
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+img:hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px #d0cdd1
+    
+} 
+
+.profile-container {
+    background-color: #fff;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-pic {
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+
+  .user-info h2 {
+    margin: 0;
+    font-size: 19px;
+  }
+
+  .user-info p {
+    font-size: 15px;
+    margin: 5px 0;
+    color: #777;
+  }
+
+  .description-box {
+    margin-top: 20px;
+    width: 400px;
+  }
+
+  .description-box textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    font-size: 14px;
+  }
+
+  .description-box button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #8e44ad;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  .description-box button:hover {
+    background-color: #732d91;
+  }
+
+  .user-stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 20px;
+    width: 250px;
+  }
+
+  .user-stats div {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+  }
+
+  .user-stats i {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #8e44ad;
+  }
+
+  .header {
+    width: 400px;
+  }
